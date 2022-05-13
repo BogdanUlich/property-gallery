@@ -52,72 +52,72 @@
 
 .nationality-slider {
     .slick-track {
-        display: flex;
+        display: flex !important;
     }
     .slick-list {
-        overflow: hidden;
+        overflow: hidden !important;
     }
     .slick-dots {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        bottom: 21px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 8px 0;
-        gap: 7px;
+        display: flex !important ;
+        justify-content: center !important ;
+        position: absolute !important ;
+        bottom: 21px !important ;
+        left: 50% !important ;
+        transform: translateX(-50%) !important ;
+        padding: 8px 0 !important ;
+        gap: 7px !important ;
         li {
-            list-style: none;
+            list-style: none !important ;
             button {
-                background: transparent;
-                border: 1px solid $white;
+                background: transparent !important ;
+                border: 1px solid $white !important ;
             }
             &.slick-active {
                 button {
-                    background: $white;
+                    background: $white !important ;
                 }
             }
         }
         button {
-            font-size: 0;
-            height: 8px;
-            width: 8px;
-            border-radius: 50%;
-            overflow: hidden;
+            font-size: 0 !important ;
+            height: 8px !important ;
+            width: 8px !important ;
+            border-radius: 50% !important ;
+            overflow: hidden !important ;
         }
     }
     .slick-arrow {
-        font-size: 0;
-        position: absolute;
-        bottom: 20px;
-        z-index: 5;
-        width: 70px;
-        height: 25px;
+        font-size: 0 !important;
+        position: absolute !important;
+        bottom: 20px !important;
+        z-index: 5 !important;
+        width: 70px !important;
+        height: 25px !important;
     }
     .slick-prev {
-        left: 43%;
-        background: url(../assets/icons/arrow-left.svg) center center no-repeat;
+        left: 43% !important;
+        background: url(../assets/icons/arrow-left.svg) center center no-repeat !important;
         @media (max-width: 1400px) {
-            left: 40%;
+            left: 40% !important;
         }
         @include lg {
-            left: 34%;
+            left: 34% !important;
         }
         @include sm {
-            left: 26%;
+            left: 26% !important;
         }
     }
     .slick-next {
-        right: 43%;
-        background: url(../assets/icons/arrow-right.svg) center center no-repeat;
+        right: 43% !important;
+        background: url(../assets/icons/arrow-right.svg) center center no-repeat !important;
         @media (max-width: 1400px) {
-            right: 40%;
+            right: 40% !important;
         }
         @include lg {
-            right: 34%;
+            right: 34% !important;
         }
         @include sm {
-            right: 26%;
+            right: 26% !important;
         }
     }
 }
