@@ -1,6 +1,7 @@
 .slider {
     position: relative;
     &__item {
+        height: 100%;
         max-height: 480px;
         padding: 83px 0 120px;
         background: linear-gradient(to right, #5e6178, #373a52);
@@ -18,13 +19,11 @@
     }
     &__container {
         position: relative;
-        max-width: 1064px;
         min-height: 100%;
         @include md {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 100%;
         }
     }
     &__title {
@@ -53,6 +52,12 @@
 .nationality-slider {
     .slick-track {
         display: flex !important;
+    }
+    .slick-slide {
+        height: auto;
+        div {
+            height: 100%;
+        }
     }
     .slick-list {
         overflow: hidden !important;
@@ -89,12 +94,13 @@
     .slick-arrow {
         font-size: 0 !important;
         position: absolute !important;
-        bottom: 20px !important;
+        bottom: 19px !important;
         z-index: 5 !important;
         width: 70px !important;
         height: 25px !important;
     }
     .slick-prev {
+        top: auto !important;
         left: 43% !important;
         background: url(../assets/icons/arrow-left.svg) center center no-repeat !important;
         @media (max-width: 1400px) {
@@ -106,8 +112,12 @@
         @include sm {
             left: 26% !important;
         }
+        &::before {
+            display: none;
+        }
     }
     .slick-next {
+        top: auto !important;
         right: 43% !important;
         background: url(../assets/icons/arrow-right.svg) center center no-repeat !important;
         @media (max-width: 1400px) {
@@ -118,6 +128,9 @@
         }
         @include sm {
             right: 26% !important;
+        }
+        &::before {
+            display: none;
         }
     }
 }
