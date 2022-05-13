@@ -72,7 +72,6 @@
     position: relative;
     &__item {
         max-height: 480px;
-        position: relative;
         padding: 83px 0 120px;
         background: linear-gradient(to right, #5e6178, #373a52);
         display: flex;
@@ -88,8 +87,10 @@
         }
     }
     &__container {
+        position: relative;
         max-width: 1064px;
-        @include sm {
+        min-height: 100%;
+        @include md {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -107,13 +108,14 @@
     }
     &__pattern {
         position: absolute;
-        top: 124px;
-        right: 100px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
         @include xl {
-            right: 40px;
+            right: 30px;
         }
         @include md {
-            right: -80px;
+            right: -50px;
         }
     }
 }
