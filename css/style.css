@@ -1223,6 +1223,10 @@ body {
   border: 1px solid #ffffff !important;
 }
 
+.nationality-slider .slick-dots li button::before {
+  display: none;
+}
+
 .nationality-slider .slick-dots li.slick-active button {
   background: #ffffff !important;
 }
