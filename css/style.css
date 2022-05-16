@@ -99,7 +99,7 @@ body {
 
 .nationality-wrapper {
   width: 100%;
-  font-size: 20px;
+  font-size: 14px;
   color: #ffffff;
   /*Общие стили*/
   /*Общие стили*/
@@ -120,40 +120,20 @@ body {
 }
 
 .nationality-wrapper .title {
-  font-weight: 300;
-  font-size: 54px;
-  line-height: 60px;
-}
-
-@media (max-width: 992px) {
-  .nationality-wrapper .title {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 768px) {
-  .nationality-wrapper .title {
-    font-size: 42px;
-  }
+  font-size: 26px;
+  line-height: 30px;
 }
 
 @media (max-width: 576px) {
   .nationality-wrapper .title {
-    font-size: 32px;
-    line-height: 38px;
-    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
 .nationality-wrapper .text {
-  font-weight: 300;
-  line-height: 23.44px;
-}
-
-@media (max-width: 768px) {
-  .nationality-wrapper .text {
-    font-size: 18px;
-  }
+  line-height: 24px;
+  font-size: 14px;
 }
 
 .nationality-wrapper .btn {
@@ -168,20 +148,20 @@ body {
           justify-content: center;
   height: 56px;
   border-radius: 180px;
+  text-transform: uppercase;
   padding: 0 15px;
   overflow: hidden;
 }
 
 @media (max-width: 576px) {
   .nationality-wrapper .btn {
-    font-size: 18px;
     height: 50px;
   }
 }
 
 .nationality-wrapper .intro {
   position: relative;
-  height: 1320px;
+  height: 1255px;
 }
 
 @media (max-width: 768px) {
@@ -223,7 +203,7 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#9d2235), to(#240106));
   background: linear-gradient(to right, #9d2235, #240106);
   position: relative;
-  padding: 130px 0 142px;
+  padding: 220px 0 250px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
   z-index: 2;
@@ -288,7 +268,7 @@ body {
   height: 855px;
   position: absolute;
   left: 0;
-  bottom: -8px;
+  bottom: -1px;
   background: url("../assets/intro/advantages-bg.webp") center center no-repeat;
   background-size: cover;
   width: 100%;
@@ -306,9 +286,6 @@ body {
 
 .nationality-wrapper .advantages__title {
   padding: 333px 0 43px;
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 42px;
 }
 
 @media (max-width: 992px) {
@@ -415,6 +392,7 @@ body {
 .nationality-wrapper .benefits {
   color: #000000;
   margin-bottom: 56px;
+  background: #f4f5f8;
 }
 
 @media (max-width: 576px) {
@@ -424,8 +402,6 @@ body {
 }
 
 .nationality-wrapper .benefits__wrapper {
-  background: #f4f5f8;
-  border-radius: 20px;
   padding: 100px 40px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,6 +581,9 @@ body {
       grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-bottom: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -671,7 +650,7 @@ body {
 }
 
 .nationality-wrapper .conditions__item-name {
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 42px;
   margin-bottom: 32px;
@@ -679,7 +658,7 @@ body {
 
 @media (max-width: 576px) {
   .nationality-wrapper .conditions__item-name {
-    font-size: 32px;
+    font-size: 18px;
   }
 }
 
@@ -928,13 +907,6 @@ body {
 
 @media (max-width: 1200px) {
   .nationality-wrapper .about__label {
-    top: -195px;
-    right: 15px;
-  }
-}
-
-@media (max-width: 992px) {
-  .nationality-wrapper .about__label {
     display: none;
   }
 }
@@ -1129,6 +1101,7 @@ body {
 .slider__container {
   position: relative;
   min-height: 100%;
+  padding: 20px 30px !important;
 }
 
 @media (max-width: 768px) {
@@ -1268,7 +1241,7 @@ body {
 
 @media (max-width: 576px) {
   .nationality-slider .slick-prev {
-    left: 26% !important;
+    left: 24% !important;
   }
 }
 
@@ -1296,7 +1269,7 @@ body {
 
 @media (max-width: 576px) {
   .nationality-slider .slick-next {
-    right: 26% !important;
+    right: 24% !important;
   }
 }
 

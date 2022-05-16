@@ -126,7 +126,7 @@ body {
 }
 .nationality-wrapper {
     width: 100%;
-    font-size: 20px;
+    font-size: 14px;
     color: $white;
     /*Общие стили*/
 
@@ -141,27 +141,16 @@ body {
         }
     }
     .title {
-        font-weight: 300;
-        font-size: 54px;
-        line-height: 60px;
-        @include lg {
-            font-size: 50px;
-        }
-        @include md {
-            font-size: 42px;
-        }
+        font-size: 26px;
+        line-height: 30px;
         @include sm {
-            font-size: 32px;
-            line-height: 38px;
-            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
         }
     }
     .text {
-        font-weight: 300;
-        line-height: 23.44px;
-        @include md {
-            font-size: 18px;
-        }
+        line-height: 24px;
+        font-size: 14px;
     }
     .btn {
         display: inline-flex;
@@ -169,10 +158,10 @@ body {
         justify-content: center;
         height: 56px;
         border-radius: 180px;
+        text-transform: uppercase;
         padding: 0 15px;
         overflow: hidden;
         @include sm {
-            font-size: 18px;
             height: 50px;
         }
     }
@@ -180,7 +169,7 @@ body {
 
     .intro {
         position: relative;
-        height: 1320px;
+        height: 1255px;
         @include md {
             height: 100%;
         }
@@ -205,7 +194,7 @@ body {
     .residence-permit {
         background: linear-gradient(to right, $warning, #240106);
         position: relative;
-        padding: 130px 0 142px;
+        padding: 220px 0 250px;
         clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
         z-index: 2;
         overflow: hidden;
@@ -248,7 +237,7 @@ body {
         height: 855px;
         position: absolute;
         left: 0;
-        bottom: -8px;
+        bottom: -1px;
         background: url("../assets/intro/advantages-bg.webp") center center no-repeat;
         background-size: cover;
         width: 100%;
@@ -261,9 +250,6 @@ body {
         }
         &__title {
             padding: 333px 0 43px;
-            font-size: 36px;
-            font-weight: 600;
-            line-height: 42px;
             @include lg {
                 padding: 300px 0 35px;
             }
@@ -329,12 +315,11 @@ body {
     .benefits {
         color: $black;
         margin-bottom: 56px;
+        background: $gray;
         @include sm {
             margin-bottom: 0;
         }
         &__wrapper {
-            background: $gray;
-            border-radius: 20px;
             padding: 100px 40px 60px;
             display: flex;
             flex-direction: column;
@@ -439,6 +424,7 @@ body {
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
             margin-bottom: 80px;
+            align-items: center;
             @include md {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -472,12 +458,12 @@ body {
                 }
             }
             &-name {
-                font-size: 36px;
+                font-size: 26px;
                 font-weight: 600;
                 line-height: 42px;
                 margin-bottom: 32px;
                 @include sm {
-                    font-size: 32px;
+                    font-size: 18px;
                 }
             }
         }
@@ -624,10 +610,6 @@ body {
             top: -25px;
             right: 0;
             @include xl {
-                top: -195px;
-                right: 15px;
-            }
-            @include lg {
                 display: none;
             }
         }

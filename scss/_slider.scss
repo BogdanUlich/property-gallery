@@ -20,6 +20,7 @@
     &__container {
         position: relative;
         min-height: 100%;
+        padding: 20px 30px !important;
         @include md {
             display: flex;
             flex-direction: column;
@@ -113,7 +114,7 @@
             left: 34% !important;
         }
         @include sm {
-            left: 26% !important;
+            left: 24% !important;
         }
         &::before {
             display: none;
@@ -130,7 +131,7 @@
             right: 34% !important;
         }
         @include sm {
-            right: 26% !important;
+            right: 24% !important;
         }
         &::before {
             display: none;
