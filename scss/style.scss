@@ -606,10 +606,19 @@ body {
             }
         }
         &__label {
+            height: 260px;
+            width: 70px;
             position: absolute;
-            top: -25px;
-            right: 0;
+            top: 0px;
+            right: 140px;
+            img {
+                max-width: 100%;
+            }
             @include xl {
+                top: -50px;
+                right: 70px;
+            }
+            @include lg {
                 display: none;
             }
         }
